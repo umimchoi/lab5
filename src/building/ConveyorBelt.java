@@ -14,6 +14,7 @@ import ui.ItemIcon;
 
 public class ConveyorBelt extends Building implements ItemReceiver, ItemProducer {	
 	public ConveyorBelt(Direction direction) {
+		
 	}
 
 	
@@ -56,5 +57,40 @@ public class ConveyorBelt extends Building implements ItemReceiver, ItemProducer
 			StackPane.setAlignment(itemIcon, Pos.TOP_CENTER);
 			target.getChildren().add(itemIcon);
 		}
+	}
+
+
+	@Override
+	public boolean canProduceItem() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public Item getProducedItem() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public boolean canReceiveItem(ItemType ofType) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public void receiveItem(Item item) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void operate() {
+		// TODO Auto-generated method stub
+		
 	}
 }
